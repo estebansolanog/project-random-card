@@ -4,6 +4,9 @@ import "./style.css";
 window.onload = () => {
   //write your code here
   document.querySelector("button").addEventListener("click", () => {
+    document
+      .querySelector(".card")
+      .classList.remove("spade", "diam", "heart", "club");
     document.querySelector(".card").classList.add(generateRandomSuit());
     document.querySelector(".number").innerHTML = generateRandomNumber();
   });
@@ -31,6 +34,6 @@ const generateRandomNumber = () => {
 
 const generateRandomSuit = () => {
   const suit = ["spade", "diam", "heart", "club"];
-  let cardSuit = Math.floor(Math.random() * suit.length) + 1;
+  let cardSuit = Math.floor(Math.random() * suit.length);
   return suit[cardSuit];
 };

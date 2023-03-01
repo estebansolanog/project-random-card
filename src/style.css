@@ -41,12 +41,6 @@ body {
   color: red;
 }
 
-.card.spade :before,
-.spade :after {
-  content: "\2660";
-  color: black;
-}
-
 .card.diam :before,
 .diam :after {
   content: "\2666";
@@ -56,6 +50,12 @@ body {
 .card.club :before,
 .club :after {
   content: "\2663";
+  color: black;
+}
+
+.card.spade :before,
+.spade :after {
+  content: "\2660";
   color: black;
 }
 
